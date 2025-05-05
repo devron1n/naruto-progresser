@@ -1,0 +1,2300 @@
+{
+  "seasons": [
+    {
+      "id": 1,
+      "title": "Спасение Казекаге",
+      "start": 1,
+      "end": 32
+    },
+    {
+      "id": 2,
+      "title": "Долгожданная встреча",
+      "start": 33,
+      "end": 53
+    },
+    {
+      "id": 3,
+      "title": "История о двенадцати стражах-ниндзя",
+      "start": 54,
+      "end": 71
+    },
+    {
+      "id": 4,
+      "title": "Бессмертные опустошители — Хидан и Какузу",
+      "start": 72,
+      "end": 88
+    },
+    {
+      "id": 5,
+      "title": "Трёххвостая черепаха-монстр",
+      "start": 89,
+      "end": 112
+    },
+    {
+      "id": 6,
+      "title": "Предсказание учителя и месть",
+      "start": 113,
+      "end": 121
+    },
+    {
+      "id": 7,
+      "title": "Прошлое: Наруто",
+      "start": 122,
+      "end": 143
+    },
+    {
+      "id": 8,
+      "title": "Вторжение Пейна",
+      "start": 144,
+      "end": 169
+    },
+    {
+      "id": 9,
+      "title": "Два спасителя",
+      "start": 170,
+      "end": 175
+    },
+    {
+      "id": 10,
+      "title": "Хроники деревни Скрытого Листа",
+      "start": 176,
+      "end": 196
+    },
+    {
+      "id": 11,
+      "title": "Совет пяти каге",
+      "start": 197,
+      "end": 222
+    },
+    {
+      "id": 12,
+      "title": "Райская жизнь на борту",
+      "start": 223,
+      "end": 242
+    },
+    {
+      "id": 13,
+      "title": "Приручение Девятихвостого",
+      "start": 243,
+      "end": 256
+    },
+    {
+      "id": 14,
+      "title": "Четвертая Великая Война Ниндзя: Противостояние",
+      "start": 257,
+      "end": 278
+    },
+    {
+      "id": 15,
+      "title": "Четвертая Великая Война Ниндзя: Клим Бийцу",
+      "start": 279,
+      "end": 302
+    },
+    {
+      "id": 16,
+      "title": "Четвертая Великая Война Ниндзя",
+      "start": 303,
+      "end": 343
+    },
+    {
+      "id": 17,
+      "title": "Четвертая Великая Война Ниндзя: Наступление Обито",
+      "start": 344,
+      "end": 360
+    }
+  ],
+  "movies": [
+    {
+      "id": 1,
+      "title": "Наруто: Ураганные хроники",
+      "after_episode": 32
+    },
+    {
+      "id": 2,
+      "title": "Наруто: Узы",
+      "after_episode": 71
+    },
+    {
+      "id": 3,
+      "title": "Наруто: Наследники Воли Огня",
+      "after_episode": 121
+    },
+    {
+      "id": 4,
+      "title": "Наруто 7: Потерянная башня",
+      "after_episode": 169
+    },
+    {
+      "id": 5,
+      "title": "Наруто: Кровавая тюрьма",
+      "after_episode": 222
+    },
+    {
+      "id": 6,
+      "title": "Наруто: Путь ниндзя",
+      "after_episode": 256
+    }
+  ],
+  "episodes": [
+    {
+      "number": 1,
+      "title": "Возвращение домой",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 2,
+      "title": "Акацуки начинает действовать",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 3,
+      "title": "Результаты тренировки",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 4,
+      "title": "Песчаный джинчурики",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 5,
+      "title": "Казекаге похищен",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 6,
+      "title": "Миссия выполнена",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 7,
+      "title": "Бег по кругу",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 8,
+      "title": "Команда Какаши разворачивается",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 9,
+      "title": "Печати Чидзиба",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 10,
+      "title": "Печать-фантом",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 11,
+      "title": "Ученик-медик",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 12,
+      "title": "Встреча со старухой",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 13,
+      "title": "Встреча судьбы",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 14,
+      "title": "Крик Наруто",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 15,
+      "title": "Скрытое оружие о котором говорят",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 16,
+      "title": "Секрет Джинчурики",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 17,
+      "title": "Смерть Гаары",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 18,
+      "title": "Ниндзя-медик на поле боя",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 19,
+      "title": "Ловушка для Саске",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 20,
+      "title": "Хируко против двух Куноичи",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 21,
+      "title": "Истинное лицо Сасори",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 22,
+      "title": "Секретные навыки Чие",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 23,
+      "title": "Отец и мать",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 24,
+      "title": "Третий Казекаге",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 25,
+      "title": "Три минуты до взрыва",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 26,
+      "title": "Десять марионеток против ста",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 27,
+      "title": "Пробуждение мечты",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 28,
+      "title": "Звериная ярость",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 29,
+      "title": "Какаши просвещается",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 30,
+      "title": "Эстетика художника",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 31,
+      "title": "Наследие",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 32,
+      "title": "Возвращение Казекаге",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 33,
+      "title": "Новое формирование команды!",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 34,
+      "title": "Команда №1 объединяется!",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 35,
+      "title": "Еще один Шиноби без названия!",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 36,
+      "title": "Улыбка-фальшивка",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 37,
+      "title": "Без названия",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 38,
+      "title": "Симуляция",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 39,
+      "title": "Тензо!",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 40,
+      "title": "Девятихвостый высвобождается!",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 41,
+      "title": "Миссия - остановить бой!",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 42,
+      "title": "Встреча на перекрестке",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 43,
+      "title": "Слезы Сакуры",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 44,
+      "title": "Секрет битвы",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 45,
+      "title": "Последствия предательства",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 46,
+      "title": "Клетка",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 47,
+      "title": "Проникновение! Лабиринт логова змеи",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 48,
+      "title": "Связи",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 49,
+      "title": "Что-то важное...",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 50,
+      "title": "История из книги",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 51,
+      "title": "Волненье перед встречей",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 52,
+      "title": "Разрушение сердец",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 53,
+      "title": "Название обещания",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 54,
+      "title": "Кошмар",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 55,
+      "title": "Ветряной Стиль: Расенган!",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 56,
+      "title": "Искусство бессмертия",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 57,
+      "title": "Вырвавшееся зло",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 58,
+      "title": "Пустота",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 59,
+      "title": "Новая техника чакры",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 60,
+      "title": "Неконтролируемая сила",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 61,
+      "title": "Контакт",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 62,
+      "title": "Товарищ",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 63,
+      "title": "Два короля",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 64,
+      "title": "Темное заклинание",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 65,
+      "title": "Запечатывание",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 66,
+      "title": "Жестокая битва",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 67,
+      "title": "Момент пробуждения",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 68,
+      "title": "Воскрешение",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 69,
+      "title": "Отчаяние",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 70,
+      "title": "Резонанс",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 71,
+      "title": "Друг",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 72,
+      "title": "Опасность проникает",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 73,
+      "title": "Преследование Акацки",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 74,
+      "title": "Под руководством звёзд",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 75,
+      "title": "Молитва старика",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 76,
+      "title": "Следующий этап",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 77,
+      "title": "Наплыв серебра",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 78,
+      "title": "Судьба",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 79,
+      "title": "Бой в стиле Сарутоби",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 80,
+      "title": "Последние слова",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 81,
+      "title": "Грустные новости",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 82,
+      "title": "Смотри в эту сторону",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 83,
+      "title": "Цель: запланированная встреча",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 84,
+      "title": "Секрет Джинчурики Какаши",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 85,
+      "title": "Страшная тайна",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 86,
+      "title": "Гениальный план Шикамару",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 87,
+      "title": "Когда ты проклят",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 88,
+      "title": "Ветряной стиль: Расен-сюрикен!",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 89,
+      "title": "Цена силы",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 90,
+      "title": "Решающая встреча",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 91,
+      "title": "Убежище",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 92,
+      "title": "Встреча",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 93,
+      "title": "Соединяясь с ожидаемым будущим",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 94,
+      "title": "Запечатанная сила",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 95,
+      "title": "Две тали",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 96,
+      "title": "За пределами тьмы...",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 97,
+      "title": "Лабиринт лжи",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 98,
+      "title": "Очередная мишень",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 99,
+      "title": "Ад осуществляется",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 100,
+      "title": "Внутренний Зверь",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 101,
+      "title": "Чувства каждого",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 102,
+      "title": "Перерыв",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 103,
+      "title": "Оковы барьера",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 104,
+      "title": "Разрушение кристалла",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 105,
+      "title": "Битва за запечатывание",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 106,
+      "title": "Красная камелия",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 107,
+      "title": "Живой с небес",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 108,
+      "title": "Ищущие",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 109,
+      "title": "Противоядие",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 110,
+      "title": "Воспоминания о преступниках",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 111,
+      "title": "Обещание верности",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 112,
+      "title": "Место, куда можно вернуться",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 113,
+      "title": "Ученик и учитель приближаются",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 114,
+      "title": "Глаз змеи",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 115,
+      "title": "Меч Учихи Итачи",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 116,
+      "title": "Стражи императорских гробниц",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 117,
+      "title": "Джурби",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 118,
+      "title": "Формирование, Хэби",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 119,
+      "title": "Ручная гакуке",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 120,
+      "title": "В погоне за тенью",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 121,
+      "title": "Исчезновение",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 122,
+      "title": "Пробуждение",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 123,
+      "title": "Столкновение",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 124,
+      "title": "Искусство",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 125,
+      "title": "Исчезновение",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 126,
+      "title": "Битва",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 127,
+      "title": "Сказки храброго Джирайи",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 128,
+      "title": "Сказки храброго Джирайи ~ Повесть о Наруто Удзумаки ~",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 129,
+      "title": "Проникновение! Деревня скрытого дождя",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 130,
+      "title": "Человек-бог Пейна",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 131,
+      "title": "Активация! Мудрость",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 132,
+      "title": "Встреча Судьбы",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 133,
+      "title": "Сказка о Храбром Джирайи",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 134,
+      "title": "Приглашение на банкет",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 135,
+      "title": "Момент пробуждения",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 136,
+      "title": "Светлое место",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 137,
+      "title": "Саске против Итачи",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 138,
+      "title": "Конец",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 139,
+      "title": "Тайна Тоби",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 140,
+      "title": "Судьба",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 141,
+      "title": "Правда об Итачи",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 142,
+      "title": "Битва в долине завершения",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 143,
+      "title": "Восемь против Саске",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 144,
+      "title": "Странник",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 145,
+      "title": "Наследник Шести Путей Мудреца",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 146,
+      "title": "Наследование",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 147,
+      "title": "Прошлое Пейна",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 148,
+      "title": "Наследник Цикла Ненависти",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 149,
+      "title": "Разделение",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 150,
+      "title": "Срок",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 151,
+      "title": "Ученик и учитель объединяются",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 152,
+      "title": "Ночь скорби",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 153,
+      "title": "Следуя по стопам учителя",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 154,
+      "title": "Расшифрованное послание",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 155,
+      "title": "Гора Мебоку",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 156,
+      "title": "Вторжение Пейна",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 157,
+      "title": "Нападение",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 158,
+      "title": "Сила веры",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 159,
+      "title": "Болью по Боли",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 160,
+      "title": "Тайна Пейна",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 161,
+      "title": "Конец Шикамару",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 162,
+      "title": "Мир боли",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 163,
+      "title": "Взрыв! Режим отшельника",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 164,
+      "title": "Опасность бродит поблизости",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 165,
+      "title": "Девятихвостый пленен!",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 166,
+      "title": "Исповедь",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 167,
+      "title": "Рык девятихвостого",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 168,
+      "title": "Четвертый Хокаге",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 169,
+      "title": "Два ученика",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 170,
+      "title": "Большая Авантюра! В поисках наследия четвертого Хокаге!",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 171,
+      "title": "Знак примирения",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 172,
+      "title": "Встреча",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 173,
+      "title": "Рождение Пейна",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 174,
+      "title": "Сказка о храбром Наруто",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 175,
+      "title": "Герой Скрытого Листа",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 176,
+      "title": "Вступление в предыдущую арку",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 177,
+      "title": "Ирука Умино: Преподаватель Академии ниндзя",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 178,
+      "title": "Суровость Ируки",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 179,
+      "title": "Учитель Хатакэ Какаши",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 180,
+      "title": "Признание Наруто",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 181,
+      "title": "Сарутоби Асума",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 182,
+      "title": "История Гаары: Круговорот песчаной бури!",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 183,
+      "title": "Наруто: История о превосходном ниндзя!",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 184,
+      "title": "Яматская команда",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 185,
+      "title": "Анимализм: Кибаши",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 186,
+      "title": "Райская жизнь на борту!",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 187,
+      "title": "История о музыке ниндзя",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 188,
+      "title": "Товарищ!",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 189,
+      "title": "Исключительный Шиноби!",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 190,
+      "title": "Наруто и старая солдатская кость",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 191,
+      "title": "Друг, которого следует спасти",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 192,
+      "title": "Атака Ниндзя-Енотов",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 193,
+      "title": "Человек, известный как Кисаме",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 194,
+      "title": "Худшие три дня!",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 195,
+      "title": "Сопротивление крови",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 196,
+      "title": "Рвение Рок Ли",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 197,
+      "title": "Шестой Хокаге Данзо",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 198,
+      "title": "Пять великих наций объединяются",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 199,
+      "title": "Как друг",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 200,
+      "title": "Прогнозируемый мятеж",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 201,
+      "title": "Болезненное решение",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 202,
+      "title": "В поисках ответа",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 203,
+      "title": "Саске проникает",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 204,
+      "title": "Сила пяти Каге!",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 205,
+      "title": "Объявление: Четвертая Великая Ниндзя-Война",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 206,
+      "title": "Чувства Сакуры",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 207,
+      "title": "Клетка Хокаге",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 208,
+      "title": "Как учителя, так и ученица...",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 209,
+      "title": "Секретная миссия ранга S",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 210,
+      "title": "Договор Столба",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 211,
+      "title": "Данзо Шимура",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 212,
+      "title": "Решимость Сакуры",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 213,
+      "title": "Узы Какаши и Саске",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 214,
+      "title": "Дуэт смотрит за тобой!",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 215,
+      "title": "Две судьбы",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 216,
+      "title": "Высокоуровневый ниндзя",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 217,
+      "title": "Провал",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 218,
+      "title": "Пять Каге принимают решение",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 219,
+      "title": "Хокаге Хатаке Какаши",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 220,
+      "title": "Предсказание учителя и месть",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 221,
+      "title": "Хранение",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 222,
+      "title": "Путь во тьму",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 223,
+      "title": "Молодая сила!",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 224,
+      "title": "Путь в замок!",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 225,
+      "title": "Судьбоносная битва!",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 226,
+      "title": "Острова тропического рая!",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 227,
+      "title": "Забытый остров!",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 228,
+      "title": "Решение!",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 229,
+      "title": "Ешь! или умри! Грибы с небес!",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 230,
+      "title": "Месть теневого клона!",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 231,
+      "title": "Закрытые дороги",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 232,
+      "title": "Девочка по имени Гуру",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 233,
+      "title": "Падший замок",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 234,
+      "title": "Любовь Нарутаро",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 235,
+      "title": "Ниндзя Кумо, Руки",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 236,
+      "title": "Друзья, с которыми ты хочешь сражаться",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 237,
+      "title": "Хуже, чем Ад",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 238,
+      "title": "Сай и Шин",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 239,
+      "title": "Легендарный Упрямец",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 240,
+      "title": "Решительность Кибы",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 241,
+      "title": "Какаши, Мой Вечный Соперник!",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 242,
+      "title": "Утраченная башня",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 243,
+      "title": "Земля-молния в Опасности!",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 244,
+      "title": "Убийца Кисаме",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 245,
+      "title": "Следующая цель Наруто",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 246,
+      "title": "Встреча в оранжевом!",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 247,
+      "title": "Целевое количество",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 248,
+      "title": "Битва на райском Острове",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 249,
+      "title": "Спасибо",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 250,
+      "title": "Неторопливый остров",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 251,
+      "title": "Человек по имени Кисаме",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 252,
+      "title": "Ангел, возвещающий о смерти",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 253,
+      "title": "Мост к миру",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 254,
+      "title": "Суперсекретная техника S-ранга!",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 255,
+      "title": "Артист и Марионетка",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 256,
+      "title": "Объединение сил!",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 257,
+      "title": "Встреча",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 258,
+      "title": "Соперники",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 259,
+      "title": "Чрезвычайная мера",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 260,
+      "title": "Разделение",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 261,
+      "title": "Четвертая Великая Война Ниндзя Начинается!",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 262,
+      "title": "Война начинается",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 263,
+      "title": "Сай и Шин",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 264,
+      "title": "Тайна техники перевоплощения!",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 265,
+      "title": "Старый друг",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 266,
+      "title": "Первый и последний оппонент",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 267,
+      "title": "Растерянная битва!",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 268,
+      "title": "Поле битвы!",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 269,
+      "title": "Подведение итогов",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 270,
+      "title": "Золотая Узы",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 271,
+      "title": "Дорога к Сакуре",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 272,
+      "title": "Мифуне против Ханзо",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 273,
+      "title": "Настоящая доброта",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 274,
+      "title": "Завершение техники",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 275,
+      "title": "Послание",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 276,
+      "title": "Атака! Сила Джинчурики!",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 277,
+      "title": "Взрыв: Режим Зверобога!",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 278,
+      "title": "Ночевка",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 279,
+      "title": "Пустая обещание",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 280,
+      "title": "Эстетика Художника",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 281,
+      "title": "Объединенная дивизия",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 282,
+      "title": "Тайный замысел",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 283,
+      "title": "Две солнечных личности",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 284,
+      "title": "Шлем, разделяющий деревни",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 285,
+      "title": "Сдерживающая сила",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 286,
+      "title": "То, что не заполнится",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 287,
+      "title": "Тот, кто находится вправо",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 288,
+      "title": "Опасности Священного Заговора",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 289,
+      "title": "Ловушка гиганта",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 290,
+      "title": "Сила: Эпизод 1",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 291,
+      "title": "Сила: Эпизод 2",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 292,
+      "title": "Сила: Эпизод 3",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 293,
+      "title": "Сила: Эпизод 4",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 294,
+      "title": "Сила: Эпизод 5",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 295,
+      "title": "Сила: Эпизод 6",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 296,
+      "title": "Наруто входит в бой!",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 297,
+      "title": "Любимый старший ученик",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 298,
+      "title": "Контакт! Наруто против Итачи!",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 299,
+      "title": "Тот, кто унаследовал",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 300,
+      "title": "Мизукаге, гигантский моллюск",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 301,
+      "title": "Исповедь",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 302,
+      "title": "Ужасающая сила",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 303,
+      "title": "Призрачные Слезы",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 304,
+      "title": "Глаза-клоны",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 305,
+      "title": "Гремучая змея",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 306,
+      "title": "Клинок Глаз",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 307,
+      "title": "Исчезающая улыбка",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 308,
+      "title": "Ночь летающей Богини",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 309,
+      "title": "Приготовления к войне: Воссоединение команды семь!",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 310,
+      "title": "Бунт проклятой куклы",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 311,
+      "title": "Пролог к «Дороге Ниндзя»",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 312,
+      "title": "Старый повстанец и черепаха Они",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 313,
+      "title": "Дождливый день",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 314,
+      "title": "Прошлое Белого Клыка",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 315,
+      "title": "Снежная буря: Узы",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 316,
+      "title": "Альянс Ниндзя Шинобив",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 317,
+      "title": "Шиноби Мечты",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 318,
+      "title": "Отверженный",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 319,
+      "title": "Душа, что обитает внутри вас",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 320,
+      "title": "Продолжай улыбаться",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 321,
+      "title": "Прибытие укрепления",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 322,
+      "title": "Мадара Учиха",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 323,
+      "title": "Воссоединение пяти Каге...!!",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 324,
+      "title": "Вопрос, ответ...пять Каге!",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 325,
+      "title": "Джинчурики против Джинчурики!!",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 326,
+      "title": "Четверо Хокаге",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 327,
+      "title": "Девять Хвостых",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 328,
+      "title": "Курама",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 329,
+      "title": "Две личности",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 330,
+      "title": "Обещание победы",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 331,
+      "title": "Глаза, что видят мрак",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 332,
+      "title": "Каменное желание",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 333,
+      "title": "Риски техники Восприятия Воли",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 334,
+      "title": "Шилено и Пэйна",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 335,
+      "title": "Группа Шин",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 336,
+      "title": "Якуши Кабуто",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 337,
+      "title": "Изуми Учиха",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 338,
+      "title": "Изанами",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 339,
+      "title": "Я всегда буду наблюдать",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 340,
+      "title": "Эдо Тенсей освобожден",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 341,
+      "title": "Возрождение Орочимару",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 342,
+      "title": "Тайна перевоплощения",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 343,
+      "title": "Кто ты?",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 344,
+      "title": "Обито и Мадара",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 345,
+      "title": "Я на пути",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 346,
+      "title": "Мир грез",
+      "filler": false,
+      "watched": false
+    },
+    {
+      "number": 347,
+      "title": "Тьма Акацуки",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 348,
+      "title": "Следующая задача",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 349,
+      "title": "Маска, который скрывает сердце",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 350,
+      "title": "История Минато ~ Скрытый шар истины ~",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 351,
+      "title": "Саске Учиха",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 352,
+      "title": "Ниндзя из Коноха",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 353,
+      "title": "Принц",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 354,
+      "title": "Связь с Орочимару",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 355,
+      "title": "Глаз Шарингана",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 356,
+      "title": "Ещё один Шиноби",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 357,
+      "title": "Учиха Шисуи",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 358,
+      "title": "Решение Курамы",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 359,
+      "title": "Ночь трагедии",
+      "filler": true,
+      "watched": false
+    },
+    {
+      "number": 360,
+      "title": "Связь Джончу",
+      "filler": false,
+      "watched": false
+    }
+  ]
+}

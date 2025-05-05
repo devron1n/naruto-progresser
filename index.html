@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Наруто: Ураганные хроники - Трекер прогресса</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f8f8;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            color: #ff7e00;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #ff4500;
+            border-bottom: 2px solid #ff4500;
+            padding-bottom: 10px;
+            margin-top: 40px;
+        }
+        .episode {
+            padding: 8px 10px;
+            margin: 5px 0;
+            background-color: #fff;
+            border-radius: 5px;
+            border-left: 4px solid #ffcf87;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            display: flex;
+            align-items: center;
+        }
+        .episode:hover {
+            background-color: #fffaf0;
+        }
+        .episode.filler {
+            border-left-color: #87ceeb;
+        }
+        .episode.movie {
+            border-left-color: #ff4500;
+            background-color: #fff0f0;
+            font-weight: bold;
+            padding: 15px 10px;
+            margin: 15px 0;
+        }
+        .checkbox {
+            margin-right: 10px;
+            width: 18px;
+            height: 18px;
+        }
+        .season-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .progress-container {
+            background-color: #eee;
+            border-radius: 10px;
+            height: 20px;
+            width: 250px;
+            margin-bottom: 10px;
+            position: relative;
+        }
+        .progress-bar {
+            background-color: #ff7e00;
+            height: 100%;
+            border-radius: 10px;
+            transition: width 0.3s ease;
+        }
+        .progress-text {
+            position: absolute;
+            width: 100%;
+            text-align: center;
+            font-size: 12px;
+            color: #333;
+            font-weight: bold;
+            line-height: 20px;
+        }
+        .stats {
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            padding: 15px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .stat {
+            text-align: center;
+            padding: 10px;
+            min-width: 120px;
+        }
+        .stat-value {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ff4500;
+        }
+        .stat-label {
+            font-size: 14px;
+            color: #666;
+        }
+        .controls {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin: 20px 0;
+        }
+        button {
+            background-color: #ff7e00;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        button:hover {
+            background-color: #ff4500;
+        }
+        .filler-label {
+            margin-left: 10px;
+            font-size: 12px;
+            font-style: italic;
+            color: #39c;
+        }
+        .toggleable {
+            cursor: pointer;
+        }
+        .collapse {
+            display: none;
+        }
+        .header-icon:after {
+            content: "▼";
+            margin-left: 10px;
+            font-size: 12px;
+        }
+        .collapsed .header-icon:after {
+            content: "►";
+        }
+        .season-actions {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 5px;
+        }
+        .season-checkbox-container {
+            display: flex;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+        .season-checkbox {
+            margin-right: 8px;
+        }
+        .filter-controls {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 15px 0;
+            flex-wrap: wrap;
+        }
+        .filter-btn {
+            background-color: #eee;
+            color: #333;
+            padding: 6px 12px;
+            border-radius: 15px;
+            border: none;
+            cursor: pointer;
+        }
+        .filter-btn.active {
+            background-color: #ff7e00;
+            color: white;
+        }
+        .search-box {
+            margin: 15px 0;
+            display: flex;
+            justify-content: center;
+        }
+        .search-box input {
+            width: 80%;
+            max-width: 500px;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        #loading {
+            text-align: center;
+            padding: 20px;
+            font-size: 18px;
+            color: #666;
+        }
+        .error-message {
+            background-color: #ffebee;
+            color: #d32f2f;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+            text-align: center;
+            border-left: 4px solid #d32f2f;
+        }
+        @media (max-width: 768px) {
+            .season-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .season-actions {
+                width: 100%;
+                align-items: flex-start;
+            }
+            .progress-container {
+                width: 100%;
+                margin-top: 10px;
+            }
+            .controls {
+                flex-wrap: wrap;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Наруто: Ураганные хроники - Трекер прогресса</h1>
+    
+    <div class="stats">
+        <div class="stat">
+            <div class="stat-value" id="total-watched">0</div>
+            <div class="stat-label">Просмотрено серий</div>
+        </div>
+        <div class="stat">
+            <div class="stat-value" id="total-episodes">0</div>
+            <div class="stat-label">Всего серий</div>
+        </div>
+        <div class="stat">
+            <div class="stat-value" id="percentage">0%</div>
+            <div class="stat-label">Прогресс</div>
+        </div>
+        <div class="stat">
+            <div class="stat-value" id="filler-watched">0</div>
+            <div class="stat-label">Филлеров просмотрено</div>
+        </div>
+    </div>
+    
+    <div class="progress-container">
+        <div class="progress-bar" id="progress-bar" style="width: 0%"></div>
+        <div class="progress-text" id="progress-text">0/0 (0%)</div>
+    </div>
+    
+    <div class="search-box">
+        <input type="text" id="search" placeholder="Поиск по названию серии...">
+    </div>
+    
+    <div class="filter-controls">
+        <button class="filter-btn active" data-filter="all">Все серии</button>
+        <button class="filter-btn" data-filter="canon">Только сюжетные</button>
+        <button class="filter-btn" data-filter="filler">Только филлеры</button>
+        <button class="filter-btn" data-filter="movie">Только фильмы</button>
+        <button class="filter-btn" data-filter="watched">Просмотренные</button>
+        <button class="filter-btn" data-filter="unwatched">Непросмотренные</button>
+    </div>
+    
+    <div class="controls">
+        <button id="save-btn">Сохранить прогресс</button>
+        <button id="reset-btn">Сбросить прогресс</button>
+        <button id="expand-all">Развернуть все</button>
+        <button id="collapse-all">Свернуть все</button>
+    </div>
+
+    <div id="loading">Загрузка данных...</div>
+    <div id="episode-list"></div>
+    
+    <script>
+        // Функция для загрузки данных из JSON файла
+        async function loadEpisodeData() {
+            try {
+                const response = await fetch('data.json');
+                if (!response.ok) {
+                    throw new Error(`HTTP ошибка: ${response.status}`);
+                }
+                const data = await response.json();
+                return data;
+            } catch (error) {
+                console.error('Ошибка загрузки данных:', error);
+                document.getElementById('loading').innerHTML = `
+                    <div class="error-message">
+                        <p>Ошибка загрузки данных: ${error.message}</p>
+                        <p>Убедитесь, что файл data.json существует и содержит корректные данные.</p>
+                    </div>
+                `;
+                return null;
+            }
+        }
+
+        // Основная функция для инициализации приложения
+        async function initApp() {
+            const data = await loadEpisodeData();
+            if (!data) return;
+            
+            const episodeList = document.getElementById('episode-list');
+            const loadingElement = document.getElementById('loading');
+            loadingElement.style.display = 'none';
+            
+            // Обновление статистики
+            const totalEpisodes = data.episodes.length;
+            document.getElementById('total-episodes').textContent = totalEpisodes;
+            
+            // Создание HTML для каждого сезона и его эпизодов
+            data.seasons.forEach(season => {
+                const seasonDiv = document.createElement('div');
+                seasonDiv.className = 'season toggleable';
+                seasonDiv.dataset.season = season.id;
+                
+                // Эпизоды сезона
+                const seasonEpisodes = data.episodes.filter(ep => 
+                    ep.number >= season.start && ep.number <= season.end
+                );
+                
+                // Шапка сезона с прогрессом
+                const seasonHeader = document.createElement('div');
+                seasonHeader.className = 'season-header';
+                seasonHeader.innerHTML = `
+                    <h2><span class="header-icon"></span> ${season.title}</h2>
+                    <div class="season-actions">
+                        <div class="season-checkbox-container">
+                            <input type="checkbox" class="season-checkbox" id="season-${season.id}">
+                            <label for="season-${season.id}">Отметить весь сезон</label>
+                        </div>
+                        <div class="progress-container">
+                            <div class="progress-bar season-progress" id="progress-season-${season.id}" style="width: 0%"></div>
+                            <div class="progress-text" id="progress-text-season-${season.id}">0/${seasonEpisodes.length} (0%)</div>
+                        </div>
+                    </div>
+                `;
+                seasonDiv.appendChild(seasonHeader);
+                
+                // Контейнер для эпизодов
+                const episodesContainer = document.createElement('div');
+                episodesContainer.className = 'season-episodes';
+                
+                // Добавление эпизодов
+                seasonEpisodes.forEach(episode => {
+                    const episodeDiv = document.createElement('div');
+                    episodeDiv.className = episode.filler ? 'episode filler' : 'episode';
+                    episodeDiv.dataset.episode = episode.number;
+                    
+                    const checkbox = document.createElement('input');
+                    checkbox.type = 'checkbox';
+                    checkbox.className = 'checkbox';
+                    checkbox.id = `ep-${episode.number}`;
+                    
+                    const label = document.createElement('label');
+                    label.htmlFor = `ep-${episode.number}`;
+                    label.textContent = `${episode.number}. "${episode.title}"`;
+                    
+                    episodeDiv.appendChild(checkbox);
+                    episodeDiv.appendChild(label);
+                    
+                    if (episode.filler) {
+                        const fillerSpan = document.createElement('span');
+                        fillerSpan.className = 'filler-label';
+                        fillerSpan.textContent = 'филлер';
+                        episodeDiv.appendChild(fillerSpan);
+                    }
+                    
+                    episodesContainer.appendChild(episodeDiv);
+                });
+                
+                // Добавление фильмов после соответствующих эпизодов
+                const seasonMovies = data.movies.filter(movie => 
+                    movie.after_episode >= season.start && movie.after_episode <= season.end
+                );
+                
+                seasonMovies.forEach(movie => {
+                    const movieDiv = document.createElement('div');
+                    movieDiv.className = 'episode movie';
+                    movieDiv.dataset.episode = `movie-${movie.id}`;
+                    
+                    const checkbox = document.createElement('input');
+                    checkbox.type = 'checkbox';
+                    checkbox.className = 'checkbox';
+                    checkbox.id = `movie-${movie.id}`;
+                    
+                    const label = document.createElement('label');
+                    label.htmlFor = `movie-${movie.id}`;
+                    label.textContent = `Полнометражный фильм: "${movie.title}"`;
+                    
+                    movieDiv.appendChild(checkbox);
+                    movieDiv.appendChild(label);
+                    
+                    // Вставляем фильм после указанного эпизода
+                    const episodeDivs = episodesContainer.querySelectorAll('.episode');
+                    let inserted = false;
+                    
+                    for (let i = 0; i < episodeDivs.length; i++) {
+                        const epNumber = parseInt(episodeDivs[i].dataset.episode);
+                        if (epNumber === movie.after_episode) {
+                            episodesContainer.insertBefore(movieDiv, episodeDivs[i].nextSibling);
+                            inserted = true;
+                            break;
+                        }
+                    }
+                    
+                    // Если не нашли место для вставки, добавляем в конец
+                    if (!inserted) {
+                        episodesContainer.appendChild(movieDiv);
+                    }
+                });
+                
+                seasonDiv.appendChild(episodesContainer);
+                episodeList.appendChild(seasonDiv);
+            });
+            
+            // Инициализация прослушивателей событий
+            initEventListeners();
+            
+            // Загрузка сохраненного прогресса
+            loadProgress();
+        }
+        
+        // Функция для инициализации прослушивателей событий
+        function initEventListeners() {
+            // Обработчик переключения сезонов (развернуть/свернуть)
+            document.querySelectorAll('.season-header').forEach(header => {
+                header.addEventListener('click', function() {
+                    const season = this.closest('.season');
+                    season.classList.toggle('collapsed');
+                    const episodes = season.querySelector('.season-episodes');
+                    if (season.classList.contains('collapsed')) {
+                        episodes.style.display = 'none';
+                    } else {
+                        episodes.style.display = 'block';
+                    }
+                });
+            });
+            
+            // Обработчик чекбоксов эпизодов
+            document.querySelectorAll('.checkbox').forEach(checkbox => {
+                checkbox.addEventListener('change', function() {
+                    updateProgress();
+                    saveProgress();
+                });
+            });
+            
+            // Обработчик чекбоксов сезонов
+            document.querySelectorAll('.season-checkbox').forEach(checkbox => {
+                checkbox.addEventListener('change', function() {
+                    const season = this.closest('.season');
+                    const seasonId = season.dataset.season;
+                    const episodeCheckboxes = season.querySelectorAll('.episode .checkbox');
+                    
+                    // Отмечаем/снимаем все эпизоды в сезоне
+                    episodeCheckboxes.forEach(epCheckbox => {
+                        epCheckbox.checked = this.checked;
+                    });
+                    
+                    updateProgress();
+                    saveProgress();
+                });
+            });
+            
+            // Обработчик кнопки "Сохранить прогресс"
+            document.getElementById('save-btn').addEventListener('click', saveProgress);
+            
+            // Обработчик кнопки "Сбросить прогресс"
+            document.getElementById('reset-btn').addEventListener('click', function() {
+                if (confirm('Вы уверены, что хотите сбросить весь прогресс просмотра?')) {
+                    resetProgress();
+                }
+            });
+            
+            // Обработчик кнопки "Развернуть все"
+            document.getElementById('expand-all').addEventListener('click', function() {
+                document.querySelectorAll('.season').forEach(season => {
+                    season.classList.remove('collapsed');
+                    season.querySelector('.season-episodes').style.display = 'block';
+                });
+            });
+            
+            // Обработчик кнопки "Свернуть все"
+            document.getElementById('collapse-all').addEventListener('click', function() {
+                document.querySelectorAll('.season').forEach(season => {
+                    season.classList.add('collapsed');
+                    season.querySelector('.season-episodes').style.display = 'none';
+                });
+            });
+            
+            // Обработчик фильтров
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                    const filter = this.dataset.filter;
+                    applyFilter(filter);
+                });
+            });
+            
+            // Обработчик поиска
+            document.getElementById('search').addEventListener('input', function() {
+                const searchText = this.value.toLowerCase();
+                searchEpisodes(searchText);
+            });
+        }
+        
+        // Функция для обновления прогресса
+        function updateProgress() {
+            const totalEpisodes = document.querySelectorAll('.episode').length;
+            const watchedEpisodes = document.querySelectorAll('.checkbox:checked').length;
+            const totalFillers = document.querySelectorAll('.episode.filler').length;
+            const watchedFillers = document.querySelectorAll('.episode.filler .checkbox:checked').length;
+            
+            const percentage = totalEpisodes > 0 ? Math.round((watchedEpisodes / totalEpisodes) * 100) : 0;
+            
+            // Обновление общего прогресса
+            document.getElementById('total-watched').textContent = watchedEpisodes;
+            document.getElementById('percentage').textContent = `${percentage}%`;
+            document.getElementById('filler-watched').textContent = watchedFillers;
+            document.getElementById('progress-bar').style.width = `${percentage}%`;
+            document.getElementById('progress-text').textContent = `${watchedEpisodes}/${totalEpisodes} (${percentage}%)`;
+            
+            // Обновление прогресса по сезонам
+            document.querySelectorAll('.season').forEach(season => {
+                const seasonId = season.dataset.season;
+                const seasonEpisodes = season.querySelectorAll('.episode').length;
+                const seasonWatched = season.querySelectorAll('.checkbox:checked').length;
+                const seasonPercentage = seasonEpisodes > 0 ? Math.round((seasonWatched / seasonEpisodes) * 100) : 0;
+                
+                document.getElementById(`progress-season-${seasonId}`).style.width = `${seasonPercentage}%`;
+                document.getElementById(`progress-text-season-${seasonId}`).textContent = `${seasonWatched}/${seasonEpisodes} (${seasonPercentage}%)`;
+                
+                // Обновление чекбокса сезона
+                const seasonCheckbox = document.getElementById(`season-${seasonId}`);
+                if (seasonCheckbox) {
+                    // Если все эпизоды просмотрены - отмечаем сезон
+                    if (seasonEpisodes > 0 && seasonWatched === seasonEpisodes) {
+                        seasonCheckbox.checked = true;
+                        seasonCheckbox.indeterminate = false;
+                    } 
+                    // Если ни один эпизод не просмотрен - снимаем отметку с сезона
+                    else if (seasonWatched === 0) {
+                        seasonCheckbox.checked = false;
+                        seasonCheckbox.indeterminate = false;
+                    } 
+                    // Если просмотрены не все эпизоды - устанавливаем промежуточное состояние
+                    else {
+                        seasonCheckbox.indeterminate = true;
+                    }
+                }
+            });
+        }
+        
+        // Функция для сохранения прогресса в localStorage
+        function saveProgress() {
+            const watchedEpisodes = {};
+            document.querySelectorAll('.checkbox').forEach(checkbox => {
+                watchedEpisodes[checkbox.id] = checkbox.checked;
+            });
+            
+            localStorage.setItem('narutoProgress', JSON.stringify(watchedEpisodes));
+            
+            // Показать уведомление о сохранении
+            const saveBtn = document.getElementById('save-btn');
+            const originalText = saveBtn.textContent;
+            saveBtn.textContent = 'Сохранено!';
+            setTimeout(() => {
+                saveBtn.textContent = originalText;
+            }, 2000);
+        }
+        
+        // Функция для загрузки прогресса из localStorage
+        function loadProgress() {
+            const savedProgress = localStorage.getItem('narutoProgress');
+            if (savedProgress) {
+                const watchedEpisodes = JSON.parse(savedProgress);
+                
+                // Сначала загружаем только состояние эпизодов, игнорируя чекбоксы сезонов
+                Object.keys(watchedEpisodes).forEach(id => {
+                    if (!id.startsWith('season-')) {
+                        const checkbox = document.getElementById(id);
+                        if (checkbox) {
+                            checkbox.checked = watchedEpisodes[id];
+                        }
+                    }
+                });
+                
+                // Затем обновляем прогресс, который автоматически установит правильное состояние
+                // для чекбоксов сезонов на основе просмотренных эпизодов
+                updateProgress();
+            }
+        }
+        
+        // Функция для сброса прогресса
+        function resetProgress() {
+            document.querySelectorAll('.checkbox').forEach(checkbox => {
+                checkbox.checked = false;
+            });
+            
+            localStorage.removeItem('narutoProgress');
+            updateProgress();
+            
+            // Показать уведомление о сбросе
+            const resetBtn = document.getElementById('reset-btn');
+            const originalText = resetBtn.textContent;
+            resetBtn.textContent = 'Сброшено!';
+            setTimeout(() => {
+                resetBtn.textContent = originalText;
+            }, 2000);
+        }
+        
+        // Функция для применения фильтров
+        function applyFilter(filter) {
+            const episodes = document.querySelectorAll('.episode');
+            
+            episodes.forEach(episode => {
+                episode.style.display = 'flex'; // По умолчанию показываем все
+                
+                const isMovie = episode.classList.contains('movie');
+                const isFiller = episode.classList.contains('filler');
+                const isWatched = episode.querySelector('.checkbox').checked;
+                
+                switch (filter) {
+                    case 'canon':
+                        if (isFiller || isMovie) {
+                            episode.style.display = 'none';
+                        }
+                        break;
+                    case 'filler':
+                        if (!isFiller) {
+                            episode.style.display = 'none';
+                        }
+                        break;
+                    case 'movie':
+                        if (!isMovie) {
+                            episode.style.display = 'none';
+                        }
+                        break;
+                    case 'watched':
+                        if (!isWatched) {
+                            episode.style.display = 'none';
+                        }
+                        break;
+                    case 'unwatched':
+                        if (isWatched) {
+                            episode.style.display = 'none';
+                        }
+                        break;
+                }
+            });
+            
+            // Скрыть пустые сезоны
+            document.querySelectorAll('.season').forEach(season => {
+                const visibleEpisodes = Array.from(season.querySelectorAll('.episode')).filter(ep => 
+                    ep.style.display !== 'none'
+                );
+                
+                if (visibleEpisodes.length === 0) {
+                    season.style.display = 'none';
+                } else {
+                    season.style.display = 'block';
+                }
+            });
+        }
+        
+        // Функция для поиска эпизодов
+        function searchEpisodes(searchText) {
+            if (searchText === '') {
+                // Если поиск пустой, восстанавливаем текущий фильтр
+                const activeFilter = document.querySelector('.filter-btn.active').dataset.filter;
+                applyFilter(activeFilter);
+                return;
+            }
+            
+            document.querySelectorAll('.episode').forEach(episode => {
+                const title = episode.querySelector('label').textContent.toLowerCase();
+                if (title.includes(searchText)) {
+                    episode.style.display = 'flex';
+                } else {
+                    episode.style.display = 'none';
+                }
+            });
+            
+            // Скрыть пустые сезоны
+            document.querySelectorAll('.season').forEach(season => {
+                const visibleEpisodes = Array.from(season.querySelectorAll('.episode')).filter(ep => 
+                    ep.style.display !== 'none'
+                );
+                
+                if (visibleEpisodes.length === 0) {
+                    season.style.display = 'none';
+                } else {
+                    season.style.display = 'block';
+                    // При поиске автоматически разворачиваем сезоны с найденными эпизодами
+                    season.classList.remove('collapsed');
+                    season.querySelector('.season-episodes').style.display = 'block';
+                }
+            });
+        }
+        
+        // Запуск приложения
+        document.addEventListener('DOMContentLoaded', initApp);
+    </script>
+</body>
+</html>
